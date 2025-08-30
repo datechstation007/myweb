@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{  
+        margin: auto; 
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #div{
+        width: 80%;
+        border: solid 2px blue;
+    }
+    #header{
+        padding: 5px;
+        width:100%;
+        height: 200px;
+        /* background-color: brown; */
+    }
+    #col1{
+        width: 10%;
+        height: 500px;
+        float: left;
+        /* background-color: aqua; */
+        padding: 10px;
+
+
+    }
+    #col2{
+        width: 80%;
+        height: 500px;
+        float: left;
+        padding:20px;
+        /* background-color: blue; */
+
+    }
+    #col3{
+        
+        width: 10%;
+        height: 500px;
+        float: left;
+        /* background-color: blueviolet; */
+        padding: 10px;
+
+
+    }
+    #row::after{
+        display: table;
+        clear: both;
+        content: "";
+    }
+    #footer{
+        width: 100%;
+        height: 200px;
+        /* background-color: chocolate; */
+        padding: 5px;
+
+    }
+    h1{
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        color: cornflowerblue;
+    }
+    hr{
+        width: 95%;
+        color: cornflowerblue; 
+        size: 5px;  
+    }
+    p{
+        font-size: larger;
+    }
+
+</style>
+<body>
+    <div id="div">
+        <div id="header">
+            <img src="https://img.freepik.com/free-vector/back-school-cover-illustration-with-education-elements_47987-23351.jpg?semt=ais_hybrid&w=740&q=80" alt="" width="100%" height="200px">
+        </div>
+        <div id="row">
+             <div id="col1">
+                <img src="https://i.pinimg.com/736x/4b/1c/67/4b1c6722f00a055adec8233d95303f77.jpg" alt="" width="100%" height="490px">
+             </div>
+             <div id="col2">
+                 <h1>=BACK TO SCHOOL ANNOUNCEMENT=</h1>
+                 <hr>
+                 <p>The wait is over it’s time to sharpen those pencils, pack your bags, and get ready for a brand new school year!</p>
+                 <br><br>
+                 <p>School is back in session! It's time to return to the classroom with fresh energy, open minds, and big dreams. Whether you're starting a new grade or continuing your journey, this year is full of new opportunities to grow and succeed. Pack your bags, bring your best attitude, and get ready to make the most of every moment. Welcome back, and let’s make this school year amazing! </p>
+                 <br>
+                 <center>
+                 <img src="https://i.pinimg.com/736x/cc/90/3e/cc903e4f25d4961b33a6cf8a68ab2957.jpg" alt="" width="700" height="270">
+                 </center>
+             </div>
+             <div id="col3">
+                <img src="https://i.pinimg.com/736x/69/a8/04/69a804262ed046451fe31b3d2536aa73.jpg" alt="" width="100%" height="490px">
+             </div>
+        </div>
+        <div id="footer">
+               <img src="https://i.pinimg.com/1200x/63/45/9b/63459b81993c27103e0220258b92614c.jpg" alt="" width="100%" height="190px">
+        </div>
+    </div>
+</body>
+</html>

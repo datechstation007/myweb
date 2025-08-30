@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #header{
+        width: 100%;
+        height: 200px;
+        background-color: cornflowerblue;
+        text-align: center;
+        margin:auto;
+        padding-top:35px;
+        font-size: 40px;
+    } 
+    #col{
+        float: left;
+        width: 33.33%;
+        background-color: bisque;
+    
+    }
+    #row::after{
+        display: table;
+        clear: both;
+        content: "";
+    }
+    #footer{
+        width: 100%;
+        height: 200px;
+        font-size: 30px;
+        color: white;
+        padding-top: 25px;
+        text-align:center;
+        background-color: brown;
+    }
+</style>
+<body>
+ <div id="header">
+Here is the Header
+ </div>
+ <div id="row">
+    <div id="col">
+        <h1>Hello 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, perferendis velit minima fugiat, corporis iste tempore debitis rem cupiditate soluta hic laudantium eligendi quod tenetur reiciendis quisquam, quae voluptates iusto.</p>
+    </div>
+    <div id="col">
+         <h1>Hello 2</h1>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, totam delectus. Voluptate neque quod et unde consectetur, aliquid esse possimus quos dolorum inventore fuga maiores commodi quidem? Cumque, porro illum.</p>
+    </div>
+    <div id="col">
+         <h1>Hello 3</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nihil est esse obcaecati itaque in incidunt? Suscipit repellendus consequatur quasi ipsum, incidunt laudantium ducimus accusantium culpa soluta numquam iure praesentium.</p>
+    </div>
+ </div>
+ <div id="footer">
+    Here is the footer
+ </div>
+</body>
+</html>

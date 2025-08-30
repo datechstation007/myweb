@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 500px;
+        background-color: lightcoral;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap:5px;
+        text-align: center;
+    }
+    .container .col{
+        position: relative;  
+    }
+    .col{
+        background-color: burlywood;
+    }
+    button{
+        width: 100px;
+        height: 50px;
+        background-color: orange;
+        border: none;
+    }
+    button:hover{
+        background-color: darkseagreen;
+    }
+    button:active{
+        background-color: darkolivegreen;
+    }
+    p::before{
+       content:"😎";
+    }
+    p::after{
+        content:"⭐";
+    }
+    p:not(.text){
+        color: darkgoldenrod;
+    }
+    p::first-letter{
+        color: darkslategray;
+       font-size: 30px;
+    }
+    li:nth-child(2){
+        color: lightpink;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="col">
+            col1
+        </div>
+        <div class="col">
+            col1
+        </div>
+        <div class="col">
+            col1
+        </div>
+        <div class="col">
+            col1
+        </div>
+        <div class="col">
+            col1
+        </div>
+        <div class="col">
+            col1
+        </div>
+    </div>
+
+    <ul>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+        <li>hello world</li>
+    </ul>
+
+    <button type="Button">Click Here</button>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quidem rerum et dignissimos nulla facilis corporis perspiciatis quae nobis, maxime totam eum? Ex cumque odit quaerat distinctio culpa excepturi alias.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dolore officia aspernatur animi dicta id eius. Alias accusantium ea deleniti debitis consequuntur necessitatibus eos laborum recusandae, quia error nesciunt labore?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet recusandae beatae dolorum doloribus, eum veritatis non praesentium error. Voluptate quasi quod quidem ex eligendi. Distinctio qui alias deleniti consequuntur obcaecati!</p>
+</body>
+</html>
